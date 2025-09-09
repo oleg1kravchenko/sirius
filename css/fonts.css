@@ -1,0 +1,29 @@
+
+@font-face {
+	font-family: "NTSomic";
+	src: url("../fonts/01_NTSomic-Regular.eot");
+	src: url("../fonts/01_NTSomic-Regular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/01_NTSomic-Regular.woff") format("woff"),
+	url("../fonts/01_NTSomic-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "NTSomic";
+	src: url("../fonts/02_NTSomic-Medium.eot");
+	src: url("../fonts/02_NTSomic-Medium.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/02_NTSomic-Medium.woff") format("woff"),
+	url("../fonts/02_NTSomic-Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "TTAutonomousMono";
+	src: url("../fonts/TT Autonomous Mono Trial Regular.eot");
+	src: url("../fonts/TT Autonomous Mono Trial Regular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/TT Autonomous Mono Trial Regular.woff") format("woff"),
+	url("../fonts/TT Autonomous Mono Trial Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
