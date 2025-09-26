@@ -168,12 +168,12 @@ $(".item-card .btn-circle, .item-card__info .title-middle").click(function(e) {
 		arrows: true,
 		dots: false,
 		infinite: false,
-		vertical: true,
+		fade: true,
+		adaptiveHeight: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		adaptiveHeight: true,
 		swipe: false,
-		asNavFor: '.slider-nav-billbord, .slider-tags-billbord',
+		asNavFor: '.slider-nav-billbord',
 		appendArrows: $(".arrows-billbord"),
 		touchThreshold: 1000,
 		speed: 1000,
@@ -182,29 +182,29 @@ $(".item-card .btn-circle, .item-card__info .title-middle").click(function(e) {
 	});
 
 
-	function setMaxSlideHeight() {
-		let maxHeight = 0;
+	// function setMaxSlideHeight() {
+	// 	let maxHeight = 0;
 	
-		$('.slider-for-billbord .slick-slide').each(function() {
-			let slideHeight = $(this).outerHeight();
-			if (slideHeight > maxHeight) {
-				maxHeight = slideHeight;
-			}
-		});
+	// 	$('.slider-for-billbord .slick-slide').each(function() {
+	// 		let slideHeight = $(this).outerHeight();
+	// 		if (slideHeight > maxHeight) {
+	// 			maxHeight = slideHeight;
+	// 		}
+	// 	});
 	
-		// Устанавливаем максимальную высоту для всех слайдов
-		$('.slider-for-billbord .slick-slide').css('height', maxHeight + 'px');
-	}
+	// 	// Устанавливаем максимальную высоту для всех слайдов
+	// 	$('.slider-for-billbord .slick-slide').css('height', maxHeight + 'px');
+	// }
 	
-	// Вызываем после инициализации слайдера
-	$('.slider-for-billbord').on('setPosition', function () {
-		setMaxSlideHeight();
-	});
+	// // Вызываем после инициализации слайдера
+	// $('.slider-for-billbord').on('setPosition', function () {
+	// 	setMaxSlideHeight();
+	// });
 	
-	// Вызываем после загрузки страницы
-	$(window).on('load', function () {
-		setMaxSlideHeight();
-	});
+	// // Вызываем после загрузки страницы
+	// $(window).on('load', function () {
+	// 	setMaxSlideHeight();
+	// });
 	
 	
 
@@ -217,7 +217,6 @@ $(".item-card .btn-circle, .item-card__info .title-middle").click(function(e) {
 		slidesToScroll: 1,
 		fade: true,
 		swipe: false,
-		asNavFor: '.slider-nav-billbord, .slider-for-billbord',
 		touchThreshold: 1000,
 		speed: 1000,
 		prevArrow: '<div class="slick-prev slick-arrow"><div/>',
@@ -244,7 +243,7 @@ $(".item-card .btn-circle, .item-card__info .title-middle").click(function(e) {
 		slidesToScroll: 1,
 		vertical: true,
 		verticalSwiping: true,
-		asNavFor: '.slider-nav-billbord, .slider-tags-billbord',
+		asNavFor: '.slider-for-billbord',
 		touchThreshold: 1000,
 		focusOnSelect: true,
 		speed: 1000,

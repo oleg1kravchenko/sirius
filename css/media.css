@@ -500,7 +500,7 @@
         line-height: 83%;
     }
     .bilbord-main .title-section {
-        max-width: 272px;
+        max-width: 100%;
     }
     .title-middle {
         font-size: 16px;
